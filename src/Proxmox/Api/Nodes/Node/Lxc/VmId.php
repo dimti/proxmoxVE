@@ -103,10 +103,10 @@ class VmId extends PVEPathClassBase
 
     /**
      * Migrate the container to another node. Creates a new migration task.
-     * @link https://pve.proxmox.com/pve-docs/api-viewer/#/nodes/{node}/lxc/{vmid}/migration
+     * @link https://pve.proxmox.com/pve-docs/api-viewer/index.html#/nodes/%7Bnode%7D/lxc/%7Bvmid%7D/migrate
      * @return \Proxmox\Api\Nodes\Node\Lxc\VmId\Migration
      */
-    public function migration(): Migration
+    public function migrate(): Migration
     {
         return new Migration($this->getPve(), $this->getPathAdditional());
     }

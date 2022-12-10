@@ -21,12 +21,12 @@ class Migration extends PVEPathClassBase
      */
     public function __construct(PVE $pve, string $parentAdditional)
     {
-        parent::__construct($pve, $parentAdditional . 'migration/');
+        parent::__construct($pve, $parentAdditional . 'migrate/');
     }
 
     /**
      * Migrate the container to another node. Creates a new migration task.
-     * @link https://pve.proxmox.com/pve-docs/api-viewer/#/nodes/{node}/lxc/{vmid}/migration
+     * @link https://pve.proxmox.com/pve-docs/api-viewer/index.html#/nodes/%7Bnode%7D/lxc/%7Bvmid%7D/migrate
      * @param $params array
      * @return array|null
      */
